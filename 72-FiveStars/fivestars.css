@@ -1,0 +1,57 @@
+
+.fivestars {
+    display:flex;/*I use flexbox to be able to put the elements in the opposite direction*/
+    width:51vw;
+    flex-direction: row-reverse; /*Makes appear from buttom to top the elements in the HTML*/
+    justify-content: center;
+    background-color: #aaaaaa;
+    border-radius: 10px;
+    padding: 2vw 2vw 2vw 1vw;
+    
+}
+.fivestars > input{
+    display:none; /* I need a button to make persistent the selection but need to be not displayed*/
+}
+.fivestars > label:last-child{/*this is the button for 0 stars*/
+    position:relative;
+    width: 1vw;
+    height: 10vw;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}    
+.fivestars > label:not(:last-child){/*this is the space for each star*/
+    position:relative;
+    width: 10vw;
+    height: 10vw;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+
+}
+.fivestars > label:not(:last-child):before{/*here is the selected star as a background image*/
+    content:"";
+    background-image: url("images/starfull.svg");
+    background-size: 10vw 10vw;
+    background-repeat: no-repeat;
+    width: 10vw;
+    height: 10vw;
+    position: absolute;/*is in absolute postion so that it appears over whatever is in the tag <label>*/
+    opacity: 0;/*makes it invisible*/
+
+} 
+.fivestars > label:hover:before,
+.fivestars > label:hover ~ label:before{/*this style is applied to the labels inside fivesstars and its siblings that follow later in the HMTL*/
+    opacity: 1 !important;
+
+}
+ 
+.fivestars > input:checked ~ label:before{/*this style is applied to the label with the radio button checked inside fivesstars and its siblings that follow in the HMTL*/
+    opacity: 1;
+
+}
+.fivestars:hover > input:checked ~ label:before{/*this style is applied to the label with the radio button and the cursor is over the checked inside fivesstars and its siblings that follow in the HMTL*/
+    opacity: 0.5;
+
+}
+    
