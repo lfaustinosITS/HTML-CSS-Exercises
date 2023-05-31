@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    width: 80vw;
+    background-color: #cccccc;
+    justify-content: space-around;
+    padding: 2vw;
+    margin: auto;
+
+}
+.part {
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 4vw;
+    color: #ffcccc;
+    background-color: #999999;
+    text-align: center;
+    line-height: 20vw;
+
+}
+.part:hover{
+    width: 22vw;
+    height: 22vw;
+    font-size: 6vw;
+    transition: font-size 2s ease-in-out, height 1s ease, width 1s ease ;
+}
