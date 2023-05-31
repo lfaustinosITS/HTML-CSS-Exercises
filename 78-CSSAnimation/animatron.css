@@ -1,0 +1,23 @@
+.animatron{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+    animation: nanana 3s linear infinite, point 3s ease-in-out infinite;
+}
+@keyframes point {
+    
+    50%{
+    
+        transform: scale(0.01);
+    }
+    
+
+}
+@keyframes nanana {
+    
+    50%{
+        transform: rotate(360deg);
+    }
+
+}
