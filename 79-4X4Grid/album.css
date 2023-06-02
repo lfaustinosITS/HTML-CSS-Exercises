@@ -1,10 +1,9 @@
 .album4x4{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,1fr);
     width: auto;
     height: auto;
-    background-color: #cccccc;
+    background-color: #ffccff;
     justify-items: center;
     justify-content: center;
     align-items: center;
@@ -14,5 +13,17 @@
     grid-row: span 1fr;
     width: auto;
     height: auto;
+    
+}
+@media screen and (max-width: 800px) {
+    .album4x4{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .album4x4{
+        grid-template-columns: 1fr;
+    }
     
 }
