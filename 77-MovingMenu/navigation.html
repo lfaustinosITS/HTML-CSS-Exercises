@@ -3,79 +3,34 @@
 <head>
 	<meta charset="UTF-8" />
 	<link rel="icon" type="image/x-icon" href="images/ship.ico" />
-    <link rel="stylesheet" type="text/css" href="navigation2.css" />
+    <link rel="stylesheet" type="text/css" href="navigation.css" />
 	<link href="https://fonts.googleapis.com/css?family=Special+Elite:400,100,300,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.cdnfonts.com/css/elegant-2" rel="stylesheet">
     <title> Navigation</title>
 </head>
 <body> 
+    <div class="leftie">
+    <input type="radio" name = "style" value = "1" id = "left" ><label for = "left" >Left</label>
+    <input type="radio" name = "style" value = "2"  id = "up" checked ><label for = "up" >Up</label>
+    <input type="radio" name = "style" value = "3"  id = "right"><label for = "right">Right</label>   
+    <nav >
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Math</a>
+                    <ul class="dropdown">
+                        <li><a href="#G">Golden Ratio</a></li>
+                        <li><a href="#D">Differential Geometry</a></li>
+                        <li><a href="#A">Algebra</a></li>
+                    </ul>
+            </li>
+            <li><a href="#" >Books</a></li>
+            <li><a href="#">Arts</a></li>
+            <li><a href="#">Roller</a></li>
+        </ul>
+    </nav>
+    </div>
     
-    <nav id="left" class = "leftie" >
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Math</a>
-                <div class="dropdown">
-                    <ul>
-                        <li><a href="#">Golden Ratio</a></li>
-                        <li><a href="#">Differential Geometry</a></li>
-                        <li><a href="#">Algebra</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li><a href="#" >Books</a></li>
-            <li><a href="#">Arts</a></li>
-            <li><a href="#">Roller</a></li>
-        </ul>
-    </nav>
-    <nav  id="right">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Math</a>
-                <div class="dropdown">
-                    <ul>
-                        <li><a href="#">Golden Ratio</a></li>
-                        <li><a href="#">Differential Geometry</a></li>
-                        <li><a href="#">Algebra</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li><a href="#" >Books</a></li>
-            <li><a href="#">Arts</a></li>
-            <li><a href="#">Roller</a></li>
-        </ul>
-    </nav>
-    <nav  id="center" class="centermenu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Math</a>
-                <div class="dropdown">
-                    <ul>
-                        <li><a href="#">Golden Ratio</a></li>
-                        <li><a href="#">Differential Geometry</a></li>
-                        <li><a href="#">Algebra</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li><a href="#" >Books</a></li>
-            <li><a href="#">Arts</a></li>
-            <li><a href="#">Roller</a></li>
-        </ul>
-    </nav>
-    <ul class="menu">
-        <li >
-            <a  href="#left">Left</a>
-        </li>
-        <li>
-            <a  href="#right">Right</a>
-        </li>
-        <li>
-            <a  href="#center">Up</a>
-        </li>
     
-    </ul>   
-
-
 </body>
 </html>

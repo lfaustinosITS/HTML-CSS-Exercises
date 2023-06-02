@@ -1,0 +1,149 @@
+.leftie #right:checked ~ nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: right;
+}
+.leftie #right:checked ~ nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color:whitesmoke;
+    font-family: 'ELEGANT', sans-serif;
+    text-decoration: none;
+    font-size: 2.5vw;
+    width: 12vw;
+}
+.leftie #right:checked ~ nav a:hover{
+    background-color: gray;
+}
+.leftie #right:checked ~ nav ul{
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.leftie #right:checked ~ nav ul li{
+    position: relative;
+
+}
+.leftie #right:checked ~ nav .dropdown{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: 100%;
+}
+.leftie #right:checked ~ nav .dropdown li {
+    display: none;
+    position:relative;
+}
+
+.leftie #right:checked ~ nav li:hover .dropdown li{
+    top:0;
+    display: block;
+}
+
+
+
+.leftie #left:checked ~ nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: left;
+}
+.leftie #left:checked ~ nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color:whitesmoke;
+    font-family: 'ELEGANT', sans-serif;
+    text-decoration: none;
+    font-size: 2.5vw;
+    width: 12vw;
+}
+.leftie #left:checked ~ nav a:hover{
+    background-color: gray;
+}
+.leftie #left:checked ~ nav ul{
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.leftie #left:checked ~ nav ul li{
+    position: relative;
+
+}
+.leftie #left:checked ~ nav .dropdown{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 100%;
+}
+.leftie #left:checked ~ nav .dropdown li {
+    display: none;
+    position:relative;
+}
+
+.leftie #left:checked ~ nav li:hover .dropdown li{
+    top:0;
+    display: block;
+}
+
+
+
+.leftie #up:checked ~ nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.leftie #up:checked ~ nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color:whitesmoke;
+    font-family: 'ELEGANT', sans-serif;
+    text-decoration: none;
+    font-size: 2.5vw;
+    width: 12vw;
+    margin: 0;
+}
+.leftie #up:checked ~ nav a:hover{
+    background-color: gray;
+}
+.leftie #up:checked ~ nav ul{
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.leftie #up:checked ~ nav ul li{
+    position: relative;
+
+}
+.leftie #up:checked ~ nav .dropdown{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.leftie #up:checked ~ nav .dropdown li {
+    display: none;
+    position:relative;
+}
+
+.leftie #up:checked ~ nav li:hover .dropdown li{
+    top:0;
+    display: block;
+}
+
