@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30vw;
+    margin: auto;
+    background-color: #cccccc;
+}
+.element{
+    position: relative;
+    width: 50%;
+    height: 20vw;
+    border: 2vw;
+    padding: 2vw;
+    margin: 2vw;
+    
+    font-family: "Special Elite",monospace;
+    font-size: 4vw;
+    text-align: center;
+    line-height: 20vw;
+    background-color: #ccccff;
+    overflow-x: auto;
+}
