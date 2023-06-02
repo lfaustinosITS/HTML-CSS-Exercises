@@ -1,0 +1,22 @@
+.container{
+ 
+    height: 80px;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+.growth{
+    width: 40px;
+    height: 80px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 80px;
+    font-family: 'ELEGANT', sans-serif;
+    transition: ease-out 1s;
+}
+.growth:hover{
+    font-size: 80px;   
+}
